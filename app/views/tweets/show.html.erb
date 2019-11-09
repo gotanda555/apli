@@ -1,0 +1,67 @@
+<%= render partial: "header2" %>
+
+<div class="all-comment">
+  <div class="details">
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="<%= @tweet.image %>" alt="Card image cap">
+        <% if user_signed_in? && current_user.id == @tweet.user_id %>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-item"><%= link_to '削除', "/tweets/#{@tweet.id}", method: :delete %></div>
+            <div class="dropdown-item"><%= link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get %></div>
+          </div>
+        </div>
+        <% end %>
+        <div class="card-body">
+          <h5 class="card-title"><%= @tweet.title %></h5>
+          <p class="card-text"><%= @tweet.text %></p>
+          <p class="card-text"><small class="text-muted">いいね数：<%= @tweet.liked_users.count %></small></p>
+          <p class="card-text"><small class="text-muted"><%= @tweet.user.nickname %></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="iine">
+  <% if current_user %>
+  <h3>いいね件数: <%= @tweet.likes.count %></h3>
+          <% if current_user.already_liked?(@tweet) %>
+            <%= link_to tweet_like_path(@tweet), method: :delete do%>
+              <i class="far fa-heart fa-2x like-btn"></i>
+              <% end %>
+          <% else %>
+            <%= link_to tweet_likes_path(@tweet) ,method: :post do%>
+              <i class="far fa-heart fa-2x unlike-btn"></i>
+            <% end %>
+          <% end %>
+          <% end %>
+    <h3>いいねしたユーザー</h3>
+<% @tweet.liked_users.each do |user| %>
+  <li><%= user.nickname %></li>
+<% end %>
+  </div>
+  <% if current_user %>
+  <div class="comment-sent">
+  <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
+  <div class="asd">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="text" placeholder="コメントする"></textarea>
+  </div>
+  <button type="submit" class="btn btn-danger">Sent</button>
+  <% end %>
+  <% end %>
+  <div class="comments">   
+    <h4>＜コメント一覧＞</h4>
+    <% if @comments %>
+    <% @comments.each do |comment| %>
+        <p>
+          <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+          <%= comment.text %>
+        </p>
+      <% end %>
+    <% end %>
+  </div>
+  </div>
+</div>

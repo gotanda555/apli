@@ -1,0 +1,22 @@
+<div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="<%= result.image %>" alt="Card image cap">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-item"><%= link_to '詳細', "/tweets/#{result.id}", method: :get %></div>
+            <% if user_signed_in? && current_user.id == result.user_id %>
+            <div class="dropdown-item"><%= link_to '削除', "/tweets/#{result.id}", method: :delete %></div>
+            <div class="dropdown-item"><%= link_to '編集', "/tweets/#{result.id}/edit", method: :get %></div>
+            <% end %>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= result.title %></h5>
+          <p class="card-text"><%= result.text %></p>
+          <p class="card-text"><small class="text-muted">いいね数：<%= result.liked_users.count %></small></p>
+          <p class="card-text"><small class="text-muted"><%= result.updated_at.strftime("%Y-%m-%d %H:%M") %> <%= result.user.nickname %></small></p>
+        </div>
+      </div>
+    </div>

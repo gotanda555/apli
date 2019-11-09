@@ -1,0 +1,189 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ 
+ *= require font-awesome
+ */
+
+ .carousel{
+  width:100%;
+  height:400px;
+  margin:auto;
+ }
+
+ .carousel img{
+  width:100%;
+  height: 400px;
+}
+
+.left-contents{
+  width:1080px;
+}
+
+.ranking{
+  background-color: #DDDDDD;
+  padding:10px 99px 10px 99px;
+}
+
+.all{
+  width:1440px;
+  height:100%;
+}
+
+.under{
+  padding: 2.5rem 0;
+  color: #fff;
+  text-align: center;
+  background-color: #343a40;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.form-group {
+  margin-left:500px;
+}
+
+.btn-primary{
+  margin-left:500px;
+}
+
+.size{
+  margin-left:500px;
+  width:400px;
+}
+
+.finish{
+  text-align: center;
+  margin-left:400px;
+  margin-top: 150px;
+}
+
+h2{
+  margin-left:450px;
+}
+
+.card-group{
+  width:300px;
+  margin:0 5px 10px 5px;
+  display: inline-block;
+}
+
+.card{
+  display: flex;
+}
+
+.left-contents{
+  width:940px;
+  margin-top:10px;
+}
+
+.card-img-top{
+  width:298px;
+  height:200px;
+  position: relative;
+}
+
+.dropdown{
+  position: absolute;
+}
+
+.all-comment{
+  height:100%;
+  display: flex;
+  margin-left:170px;
+}
+
+.details{
+  margin-top:30px;
+  margin-left:30px;
+}
+
+.comment-sent{
+  margin-top:30px;
+}
+
+.comments{
+  margin-top:30px;
+}
+
+h4{
+  margin-left:100px;
+}
+
+.tweets-form{
+  margin-top:30px;
+}
+
+.nameran{
+  margin-top:30px;
+}
+
+.top{
+  margin-top:30px;
+}
+
+.iine{
+  width:300px;
+  margin:30px 0 0 30px;
+}
+
+.btn-danger{
+  width:400px;
+  margin-top:10px;
+}
+
+h5{
+  margin-top:10px;
+}
+
+.png{
+  text-align: center;
+}
+
+.page {
+  margin-right:10px;
+}
+
+.pagination{
+  margin-left:10px;
+}
+
+.box{
+  background-color: #fff;
+}
+
+.like-btn{
+  color: #e54747;
+}
+
+.unlike-btn{
+  color: #808080;
+}
+
+.rank{
+  width:302px;
+}
+
+.rank-top{
+  width:300px;
+}
+
+.sabtitle{
+  text-align: center;
+}
+
+.top-title{
+  text-align: center;
+}
+
+
