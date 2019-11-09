@@ -54,4 +54,3 @@ production:
   password: <%= ENV['APLI_DATABASE_PASSWORD'] %>
   adapter: postgresql
   encoding: unicode
-  pool: 30
