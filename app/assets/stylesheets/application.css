@@ -262,18 +262,22 @@ h4{
   margin-left:40px;
 }
 
-.nene{
+.group-resize{
   margin:10px 0 0 130px;
 }
 
-.nana{
+.form-resize{
   margin-left:0px;
   width:400px;
 }
 
-.kaka{
+.btn-resize{
   width:122px;
   margin-top:20px;
+}
+
+.search-resize{
+  margin:0;
 }
 
 h3{
@@ -288,10 +292,6 @@ h3{
   text-align: center;
   margin:80px 10px 0;
   width:355px;
-}
-
-.kk{
-  margin:0;
 }
 
 .top-title{
