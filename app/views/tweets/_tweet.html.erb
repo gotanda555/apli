@@ -13,8 +13,8 @@
           </div>
         </div>
         <div class="card-body">
-          <h5 class="card-title"><%= result.title %></h5>
-          <p class="card-text"><%= result.text %></p>
+          <h5 class="card-title"><%= result.title.truncate(14, omission: '...')%></h5>
+          <p class="card-text"><%= result.text.truncate(30, omission: '...')%></p>
           <p class="card-text"><small class="text-muted">いいね数：<%= result.liked_users.count %></small></p>
           <p class="card-text"><small class="text-muted"><%= result.updated_at.strftime("%Y-%m-%d %H:%M") %> <%= result.user.nickname %></small></p>
         </div>
