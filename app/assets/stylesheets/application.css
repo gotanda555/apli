@@ -192,6 +192,10 @@ h5{
   text-align: center;
 }
 
+.form-control{
+  width:400px;
+}
+
 
 @media screen and (max-width:375px){
 
@@ -221,11 +225,11 @@ h2{
 }
 
 .form-group {
-  margin:10px 0 0 130px;
+  margin:10px 0 0 50px;
 }
 
 .btn-primary{
-  margin:10px 130px 0;
+  margin:30px 150px 0;
 }
 
 img{
@@ -263,7 +267,7 @@ h4{
 }
 
 .group-resize{
-  margin:10px 0 0 130px;
+  margin:10px 0 0 50px;
 }
 
 .form-resize{
@@ -274,6 +278,7 @@ h4{
 .btn-resize{
   width:122px;
   margin-top:20px;
+  margin-left:130px;
 }
 
 .search-resize{
@@ -281,7 +286,7 @@ h4{
 }
 
 h3{
-  margin:10px 0 0 40px;
+  margin:10px 0 0 20px;
 }
 
 .top{
