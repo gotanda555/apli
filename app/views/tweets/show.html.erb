@@ -25,19 +25,8 @@
     </div>
   </div>
   
-  <div class="iine">
-  <% if current_user %>
-  <h3>いいね件数: <%= @tweet.likes.count %></h3>
-          <% if current_user.already_liked?(@tweet) %>
-            <%= link_to tweet_like_path(@tweet), method: :delete do%>
-              <i class="far fa-heart fa-2x like-btn"></i>
-              <% end %>
-          <% else %>
-            <%= link_to tweet_likes_path(@tweet) ,method: :post do%>
-              <i class="far fa-heart fa-2x unlike-btn"></i>
-            <% end %>
-          <% end %>
-          <% end %>
+  <div class="iine" id="like-<%= @tweet.id %>">
+  <%= render partial: "like", locals: { tweet: @tweet } %>
     <h3>いいねしたユーザー</h3>
 <% @tweet.liked_users.each do |user| %>
   <li><%= user.nickname %></li>
