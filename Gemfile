@@ -71,6 +71,7 @@ gem 'counter_culture', '~> 1.8'
 
 gem "font-awesome-rails"
 gem 'ransack'
+gem 'jquery-rails'
 
 group :production do
   gem 'pg'
