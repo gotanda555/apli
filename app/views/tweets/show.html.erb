@@ -45,17 +45,17 @@
     <h4>＜コメント一覧＞</h4>
     <% if @comments %>
     <% @comments.each do |comment| %>
-        <p class="comment_text">
+        <div class="comment_text" id="comment<%=comment.id%>">
         <div class="display">
           <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
           <% if user_signed_in? && current_user.id == comment.user_id %>
-          <%= link_to '削除', "/tweets/#{@tweet.id}/comments/#{comment.id}", method: :delete, class:"delete" %>
+          <%= link_to '削除', "/tweets/#{@tweet.id}/comments/#{comment.id}", class:"delete" %>
         <% end %>
         </div>
           <div class="comment_mac">
           <%= comment.text %>
           </div>
-        </p>
+        </div>
       <% end %>
     <% end %>
   </div>
