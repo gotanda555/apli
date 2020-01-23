@@ -333,8 +333,22 @@ h3{
 
 .delete{
   display:block;
-  margin:0 10px 5px;
+  margin:0;
   color:red;
+}
+
+.display{
+  display:flex;
+  margin:0 10px;
+}
+
+.air{
+  margin-bottom:100px;
+}
+
+.comment_mac{
+  width:300px;
+  margin:0 10px;
 }
 
 
