@@ -196,6 +196,28 @@ h5{
   width:400px;
 }
 
+.delete{
+  display:block;
+  padding-left:20px;
+  color:red;
+}
+
+.comment_text{
+  width:400px;
+  margin-bottom:0;
+}
+
+.display{
+  display:flex;
+}
+
+.air{
+  margin-bottom:100px;
+}
+
+.comment_mac{
+  width:400px;
+}
 
 @media screen and (max-width:375px){
 
@@ -302,6 +324,17 @@ h3{
 .top-title{
   text-align: center;
   margin:0;
+}
+
+.comment_text{
+  width:300px;
+  margin:0 10px 5px;
+}
+
+.delete{
+  display:block;
+  margin:0 10px 5px;
+  color:red;
 }
 
 

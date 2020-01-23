@@ -7,6 +7,14 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    comment = Comment.find(params[:id])
+    if comment.user_id == current_user.id
+      comment.destroy
+      redirect_to tweet_path(params[:tweet_id])
+    end
+  end
+
   private
   def comment_params
     params.permit(:text, :tweet_id).merge(user_id: current_user.id)
