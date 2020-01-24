@@ -19,14 +19,17 @@ https://infinite-reaches-05797.herokuapp.com/
 * Ruby: 2.5.1
   - Rails: 5.2.2
 * Heroku
+
 **gem：**
 * kaminari
 * devise
 * font-awesome-rails
 * ransack
+
 **フロントエンド：**
 * HTML
 * CSS
+
 **javaScriptパッケージ：**
 * jQuery
 
