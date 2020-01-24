@@ -1,20 +1,11 @@
 # ラーメン工房
-## aaa
+ユーザーが美味しいと思うラーメンを投稿して、全員で共有するwebアプリです。
+転職用のポートフォリオとして作成しました。
 
-* Ruby version
+## リンク
+https://infinite-reaches-05797.herokuapp.com/
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+テストユーザーログイン：
+* ログインボタンを押していただければ、テストユーザーのメールアドレスとパスワードが入力してあるので、ログインができます。
+  ※観覧用としてご自由にお使いください
+* スマホでご覧の場合、ホーム画面の右側を押していただくとメニューが現れます。
