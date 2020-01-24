@@ -17,5 +17,5 @@ https://infinite-reaches-05797.herokuapp.com/
 ## 使用技術
 **サーバーサイド：**
 * Ruby: 2.5.1
-- Rails: 5.2.2
+  - Rails: 5.2.2
 * Heroku
