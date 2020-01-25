@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/54758561/73115815-ce668880-3f6e-11ea-81b8-ce341cdddb98.png)
 
-![image](https://user-images.githubusercontent.com/54758561/73115826-3026f280-3f6f-11ea-8704-da6ac4af18fd.png)  ![image](https://user-images.githubusercontent.com/54758561/73115903-ce678800-3f70-11ea-8671-9646c3eea210.png)
+![image](https://user-images.githubusercontent.com/54758561/73115826-3026f280-3f6f-11ea-8704-da6ac4af18fd.png)        ![image](https://user-images.githubusercontent.com/54758561/73115903-ce678800-3f70-11ea-8671-9646c3eea210.png)
 
 ## リンク
 https://infinite-reaches-05797.herokuapp.com/
