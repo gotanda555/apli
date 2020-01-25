@@ -220,11 +220,304 @@ h5{
   margin-bottom:10px;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:320px){
+  .all{
+    width:100%;
+    height:100%;
+  }
+
+  .sabtitle{
+    text-align: center;
+    font-size:12px;
+  }
+  
+  .left-contents{
+    width:375px;
+    margin-top:10px;
+  }
+  
+  .ranking{
+    background-color: #DDDDDD;
+    padding:30px 0 20px 8px;
+    width:100%;
+  }
+  
+  .card-group{
+    width:300px;
+    margin:0 10px 10px;
+    display: inline-block;
+  }
+  
+  .pagination{
+    margin:0 0 10px 40px;
+  }
+  
+  h2{
+    margin:10px 140px 0;
+  }
+  
+  .form-group {
+    margin:10px 0 0 50px;
+  }
+  
+  .btn-primary{
+    margin:30px 140px 0;
+  }
+  
+  img{
+    width:320px;
+    height:150px;
+  }
+  
+  .sign{
+    margin:10px 130px 0;
+  }
+  
+  .all-comment{
+    height:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .details{
+    margin-top:30px;
+    margin-left:0;
+  }
+  
+  .btn-danger{
+    width:300px;
+    margin:10px 0 0 40px;
+  }
+  
+  h4{
+    margin-left:90px;
+  }
+  
+  .form-control{
+    width:300px;
+    margin-left:40px;
+  }
+  
+  .group-resize{
+    margin:10px 0 0 50px;
+  }
+  
+  .form-resize{
+    margin-left:0px;
+    width:400px;
+  }
+  
+  .btn-resize{
+    width:122px;
+    margin-top:20px;
+    margin-left:130px;
+  }
+  
+  .search-resize{
+    margin:0;
+  }
+  
+  h3{
+    margin:10px 0 0 20px;
+  }
+  
+  .top{
+    margin:30px 120px 0;
+  }
+  
+  .finish{
+    text-align: center;
+    margin:80px 0 0;
+    width:355px;
+  }
+  
+  .top-title{
+    text-align: center;
+    margin:0;
+  }
+  
+  .comment_text{
+    width:300px;
+    margin:0 10px 5px;
+  }
+  
+  .delete{
+    display:block;
+    margin:0;
+    color:red;
+  }
+  
+  .display{
+    display:flex;
+    margin:0 10px;
+  }
+  
+  .air{
+    margin-bottom:100px;
+  }
+  
+  .comment_mac{
+    width:300px;
+    margin:0 10px;
+  }
+}
+
+
+
+@media screen and (min-width:325px) and (max-width:360px){
+  .all{
+    width:100%;
+    height:100%;
+  }
+
+  .sabtitle{
+    text-align: center;
+    font-size:12px;
+  }
+  
+  .left-contents{
+    width:375px;
+    margin-top:10px;
+  }
+  
+  .ranking{
+    background-color: #DDDDDD;
+    padding:30px 0 20px 30px;
+    width:100%;
+  }
+  
+  .card-group{
+    width:300px;
+    margin:0 30px 10px;
+    display: inline-block;
+  }
+  
+  .pagination{
+    margin:0 0 10px 40px;
+  }
+  
+  h2{
+    margin:10px 140px 0;
+  }
+  
+  .form-group {
+    margin:10px 0 0 50px;
+  }
+  
+  .btn-primary{
+    margin:30px 140px 0;
+  }
+  
+  img{
+    width:360px;
+    height:150px;
+  }
+  
+  .sign{
+    margin:10px 130px 0;
+  }
+  
+  .all-comment{
+    height:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .details{
+    margin-top:30px;
+    margin-left:0;
+  }
+  
+  .btn-danger{
+    width:300px;
+    margin:10px 0 0 40px;
+  }
+  
+  h4{
+    margin-left:90px;
+  }
+  
+  .form-control{
+    width:300px;
+    margin-left:40px;
+  }
+  
+  .group-resize{
+    margin:10px 0 0 50px;
+  }
+  
+  .form-resize{
+    margin-left:0px;
+    width:400px;
+  }
+  
+  .btn-resize{
+    width:122px;
+    margin-top:20px;
+    margin-left:130px;
+  }
+  
+  .search-resize{
+    margin:0;
+  }
+  
+  h3{
+    margin:10px 0 0 20px;
+  }
+  
+  .top{
+    margin:30px 120px 0;
+  }
+  
+  .finish{
+    text-align: center;
+    margin:80px 0 0;
+    width:355px;
+  }
+  
+  .top-title{
+    text-align: center;
+    margin:0;
+  }
+  
+  .comment_text{
+    width:300px;
+    margin:0 10px 5px;
+  }
+  
+  .delete{
+    display:block;
+    margin:0;
+    color:red;
+  }
+  
+  .display{
+    display:flex;
+    margin:0 10px;
+  }
+  
+  .air{
+    margin-bottom:100px;
+  }
+  
+  .comment_mac{
+    width:300px;
+    margin:0 10px;
+  }
+}
+
+
+
+@media screen and (min-width:365px) and (max-width:375px){
 
 .all{
   width:100%;
   height:100%;
+}
+
+.left-contents{
+  width:375px;
+  margin-top:10px;
 }
 
 .ranking{
@@ -235,7 +528,7 @@ h5{
 
 .card-group{
   width:300px;
-  margin:0 39px 10px;
+  margin:0 36px 10px;
   display: inline-block;
 }
 
@@ -351,6 +644,427 @@ h3{
   width:300px;
   margin:0 10px;
 }
+}
 
+@media screen and (min-width:380px) and (max-width:760px){
 
+  .all{
+    width:100%;
+    height:100%;
+  }
+  
+  .ranking{
+    background-color: #DDDDDD;
+    padding:30px 0 20px 58px;
+    width:100%;
+  }
+  
+  .card-group{
+    width:300px;
+    margin:0 55px 10px;
+    display: inline-block;
+  }
+  
+  .pagination{
+    margin:0 0 10px 40px;
+  }
+  
+  h2{
+    margin:10px 140px 0;
+  }
+  
+  .form-group {
+    margin:10px 0 0 50px;
+  }
+  
+  .btn-primary{
+    margin:30px 140px 0;
+  }
+  
+  img{
+    width:375px;
+    height:150px;
+  }
+  
+  .sign{
+    margin:10px 130px 0;
+  }
+  
+  .all-comment{
+    height:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .details{
+    margin-top:30px;
+    margin-left:0;
+  }
+  
+  .btn-danger{
+    width:300px;
+    margin:10px 0 0 40px;
+  }
+  
+  h4{
+    margin-left:90px;
+  }
+  
+  .form-control{
+    width:300px;
+    margin-left:40px;
+  }
+  
+  .group-resize{
+    margin:10px 0 0 50px;
+  }
+  
+  .form-resize{
+    margin-left:0px;
+    width:400px;
+  }
+  
+  .btn-resize{
+    width:122px;
+    margin-top:20px;
+    margin-left:130px;
+  }
+  
+  .search-resize{
+    margin:0;
+  }
+  
+  h3{
+    margin:10px 0 0 20px;
+  }
+  
+  .top{
+    margin:30px 120px 0;
+  }
+  
+  .finish{
+    text-align: center;
+    margin:80px 30px 0;
+    width:355px;
+  }
+  
+  .top-title{
+    text-align: center;
+    margin:0;
+  }
+  
+  .comment_text{
+    width:300px;
+    margin:0 10px 5px;
+  }
+  
+  .delete{
+    display:block;
+    margin:0;
+    color:red;
+  }
+  
+  .display{
+    display:flex;
+    margin:0 10px;
+  }
+  
+  .air{
+    margin-bottom:100px;
+  }
+  
+  .comment_mac{
+    width:300px;
+    margin:0 10px;
+  } 
+}
+
+@media screen and (min-width:768px) and (max-width:1000px){
+
+  .all{
+    width:100%;
+    height:100%;
+  }
+  
+  .ranking{
+    background-color: #DDDDDD;
+    padding:30px 0 20px 225px;
+    width:100%;
+  }
+  
+  .card-group{
+    width:300px;
+    margin:0 40px 10px;
+    display: inline-block;
+  }
+  
+  .pagination{
+    margin:0 0 10px 40px;
+  }
+  
+  h2{
+    margin:10px 190px 0;
+  }
+  
+  .form-group {
+    margin:10px 0 0 190px;
+  }
+  
+  .btn-primary{
+    margin:30px 190px 0;
+  }
+  
+  img{
+    width:375px;
+    height:150px;
+  }
+  
+  .sign{
+    margin:10px 130px 0;
+  }
+  
+  .all-comment{
+    height:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .details{
+    margin-top:30px;
+    margin-left:190px;
+  }
+  
+  .btn-danger{
+    width:300px;
+    margin:10px 0 0 40px;
+  }
+  
+  h4{
+    margin-left:90px;
+  }
+  
+  .form-control{
+    width:300px;
+    margin-left:40px;
+  }
+  
+  .group-resize{
+    margin:10px 0 0 190px;
+  }
+  
+  .form-resize{
+    margin-left:0px;
+    width:400px;
+  }
+  
+  .btn-resize{
+    width:122px;
+    margin-top:20px;
+    margin-left:330px;
+  }
+  
+  .search-resize{
+    margin:0;
+  }
+  
+  h3{
+    margin:10px 0 0 20px;
+  }
+  
+  .top{
+    margin:30px 120px 0;
+  }
+  
+  .finish{
+    text-align: center;
+    margin:80px 210px 0;
+    width:355px;
+  }
+  
+  .top-title{
+    text-align: center;
+    margin:0;
+  }
+  
+  .comment_text{
+    width:300px;
+    margin:0 10px 5px;
+  }
+  
+  .delete{
+    display:block;
+    margin:0;
+    color:red;
+  }
+  
+  .display{
+    display:flex;
+    margin:0 10px;
+  }
+  
+  .air{
+    margin-bottom:100px;
+  }
+  
+  .comment_mac{
+    width:300px;
+    margin:0 10px;
+  } 
+
+  .iine{
+    width:300px;
+    margin:30px 0 0 230px;
+  }
+
+  .comment-sent{
+    margin-top:30px;
+    margin-left:190px;
+  }
+}
+
+@media screen and (min-width:1001px) and (max-width:1024px){
+  .all{
+    width:100%;
+    height:100%;
+  }
+
+  .left-contents{
+    width:1024px;
+    margin:0 40px;
+  }
+  
+  .ranking{
+    background-color: #DDDDDD;
+    padding:30px 0 20px 370px;
+    width:100%;
+  }
+  
+  .card-group{
+    width:300px;
+    margin:0 5px 10px;
+    display: inline-block;
+  }
+  
+  .pagination{
+    margin:0 0 10px 40px;
+  }
+  
+  h2{
+    margin:10px 300px 0;
+  }
+  
+  .form-group {
+    margin:10px 0 0 300px;
+  }
+  
+  .btn-primary{
+    margin:30px 300px 0;
+  }
+  
+  img{
+    width:375px;
+    height:150px;
+  }
+  
+  .sign{
+    margin:10px 130px 0;
+  }
+  
+  .all-comment{
+    height:100%;
+    display: block;
+    margin:0;
+  }
+  
+  .details{
+    margin-top:30px;
+    margin-left:350px;
+  }
+  
+  .btn-danger{
+    width:300px;
+    margin:10px 0 0 40px;
+  }
+  
+  h4{
+    margin-left:90px;
+  }
+  
+  .form-control{
+    width:300px;
+    margin-left:40px;
+  }
+  
+  .group-resize{
+    margin:10px 0 0 320px;
+  }
+  
+  .form-resize{
+    margin-left:0px;
+    width:400px;
+  }
+  
+  .btn-resize{
+    width:122px;
+    margin-top:20px;
+    margin-left:450px;
+  }
+  
+  .search-resize{
+    margin:0;
+  }
+  
+  h3{
+    margin:10px 0 0 20px;
+  }
+  
+  .top{
+    margin:30px 300px 0;
+  }
+  
+  .finish{
+    text-align: center;
+    margin:80px 330px 0;
+    width:355px;
+  }
+  
+  .top-title{
+    text-align: center;
+    margin:0;
+  }
+  
+  .comment_text{
+    width:300px;
+    margin:0 10px 5px;
+  }
+  
+  .delete{
+    display:block;
+    margin:0;
+    color:red;
+  }
+  
+  .display{
+    display:flex;
+    margin:0 10px;
+  }
+  
+  .air{
+    margin-bottom:100px;
+  }
+  
+  .comment_mac{
+    width:300px;
+    margin:0 10px;
+  } 
+
+  .iine{
+    width:300px;
+    margin:30px 0 0 350px;
+  }
+
+  .comment-sent{
+    margin-top:30px;
+    margin-left:320px;
+  }
 }
