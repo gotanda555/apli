@@ -2,6 +2,8 @@
 ユーザーが美味しいと思うラーメンを投稿して、全員で共有するwebアプリです。
 転職用のポートフォリオとして作成しました。
 
+![image](https://user-images.githubusercontent.com/54758561/73115815-ce668880-3f6e-11ea-81b8-ce341cdddb98.png)
+
 ## リンク
 https://infinite-reaches-05797.herokuapp.com/
 
