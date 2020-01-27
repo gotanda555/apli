@@ -47,7 +47,6 @@ $(function() {
       dataType: 'json'
     })
     .done(function(tweets) {
-      console.log(tweets)
       $(".left-contents").empty();
       $(".left-contents").append(`<h3 class="top-title">投稿一覧</h3>`);
       if (tweets.length !== 0) {
