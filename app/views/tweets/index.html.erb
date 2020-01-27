@@ -37,7 +37,7 @@
     <%= render partial: "tweet", locals: { result: result } %>
     <% end %>
     <% end %>
-    <%= paginate(@results) %>
+    <div class="pagi"><%= paginate(@results) %></div>
   </div>
   <%# ランキング %>
   <div class="ranking">
