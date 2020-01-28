@@ -18,7 +18,6 @@
         <div class="card-body">
           <h5 class="card-title"><%= @tweet.title %></h5>
           <p class="card-text"><%= @tweet.text %></p>
-          <p class="card-text"><small class="text-muted">いいね数：<%= @tweet.liked_users.count %></small></p>
           <p class="card-text"><small class="text-muted"><%= @tweet.user.nickname %></small></p>
         </div>
       </div>
@@ -26,10 +25,8 @@
   </div>
   
   <div class="iine" id="like-<%= @tweet.id %>">
+  <% if current_user %>
   <%= render partial: "like", locals: { tweet: @tweet } %>
-    <h3>いいねしたユーザー</h3>
-<% @tweet.liked_users.each do |user| %>
-  <li><%= user.nickname %></li>
 <% end %>
   </div>
   <% if current_user %>
