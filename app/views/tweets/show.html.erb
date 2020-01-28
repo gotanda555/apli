@@ -34,7 +34,7 @@
   </div>
   <% if current_user %>
   <div class="comment-sent">
-  <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post, id: "new_comment") do %>
+  <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post, id: "new_comment", data:{tweet: "#{@tweet.id}"}) do %>
   <div class="asd">
     <textarea class="form-control textbox" id="exampleFormControlTextarea1" rows="6" name="text" placeholder="コメントする"></textarea>
   </div>

@@ -3,10 +3,17 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @tweets = Tweet.includes(:user).page(params[:page]).per(9).order("created_at DESC")
     @all_ranks = Tweet.find(Like.group(:tweet_id).order('count(tweet_id) desc').limit(3).pluck(:tweet_id))
-    @search = Tweet.ransack(params[:q])
-    @results = @search.result.page(params[:page]).per(9).order("created_at DESC")
+    if params[:q] == nil
+      @results = Tweet.search(params[:q]).includes(:user).page(params[:page]).per(9).order("created_at DESC")
+    else
+      @results = Tweet.search(params[:q]).includes(:user).order("created_at DESC")
+    end
+    respond_to do |format|
+      format.html
+      format.json
+    end
+
   end
 
   def new
