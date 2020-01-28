@@ -13,15 +13,14 @@ $(function(){
   }
   $('#new_comment').on('submit', function(e){
     e.preventDefault();
-    var formData = new FormData(this);
     var url = $(this).attr('action');
+    var text = $('.form-control').val();
+    var id = $(this).data("tweet");
     $.ajax({
       url: url,
       type: "POST",
-      data: formData,
-      dataType: 'json',
-      processData: false,
-      contentType: false
+      data: {text: text,tweet_id: id},
+      dataType: 'json'
     })
     .done(function(data){
       var html = buildHTML(data);

@@ -1,11 +1,11 @@
 <% if current_user %>
   <h3>いいね件数: <%= @tweet.likes.count %></h3>
           <% if current_user.already_liked?(@tweet) %>
-            <%= link_to tweet_like_path(@tweet), method: :delete, remote: true do%>
+            <%= link_to tweet_like_path(@tweet), method: :delete do%>
               <i class="far fa-heart fa-2x like-btn"></i>
               <% end %>
           <% else %>
-            <%= link_to tweet_likes_path(@tweet) ,method: :post, remote: true do%>
+            <%= link_to tweet_likes_path(@tweet) ,method: :post do%>
               <i class="far fa-heart fa-2x unlike-btn"></i>
             <% end %>
           <% end %>
