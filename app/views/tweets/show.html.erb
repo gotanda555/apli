@@ -27,7 +27,7 @@
   <div class="iine" id="like-<%= @tweet.id %>">
   <% if current_user %>
   <%= render partial: "like", locals: { tweet: @tweet } %>
-<% end %>
+  <% end %>
   </div>
   <% if current_user %>
   <div class="comment-sent">

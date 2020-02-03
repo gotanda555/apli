@@ -4,17 +4,16 @@ class LikesController < ApplicationController
     @like = current_user.likes.create(like_params)
 
     respond_to do |format|
-      format.html { redirect_to @tweet }
+      format.html 
       format.js
     end
   end
 
   def destroy
-    @like = Like.find_by(like_params, user_id: current_user.id)
+    @like = Like.find_by(tweet_id: @tweet.id, user_id: current_user.id)
     @like.destroy
-    
     respond_to do |format|
-      format.html { redirect_to @tweet }
+      format.html 
       format.js
     end
   end

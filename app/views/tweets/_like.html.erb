@@ -1,23 +1,23 @@
-<% if current_user.already_liked?(@tweet) %>
-<div id="liked">
+<% if current_user.likes.find_by(tweet_id: @tweet.id) %>
+<div>
   <h3>いいね件数: <%= @tweet.likes.count %></h3>
   <%= link_to tweet_like_path(@tweet, current_user.likes.find_by(tweet_id: @tweet.id)), method: :delete ,remote: true  do%>
     <i class="far fa-heart fa-2x like-btn"></i>
     <% end %>
     <h3>いいねしたユーザー</h3>
     <% @tweet.liked_users.each do |user| %>
-  <li><%= user.nickname %></li>
+  <li id="<% user.id %>"><%= user.nickname %></li>
 <% end %>
 </div>
 <% else %>
-<div id="likable">
+<div>
   <h3>いいね件数: <%= @tweet.likes.count %></h3>
   <%= link_to tweet_likes_path(@tweet,current_user.likes.build) ,method: :post ,remote: true do%>
     <i class="far fa-heart fa-2x unlike-btn"></i>
     <% end %>
     <h3>いいねしたユーザー</h3>
     <% @tweet.liked_users.each do |user| %>
-  <li><%= user.nickname %></li>
+  <li id="<% user.id %>"><%= user.nickname %></li>
 <% end %>
 </div>
 <% end %>
